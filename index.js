@@ -1,6 +1,7 @@
 const shareBtn = document.querySelector(".share-btn")
 const sharePopUp = document.querySelector(".share-box2")
 const author = document.querySelector(".author-box");
+const year = document.querySelector("#Year");
 
     shareBtn.addEventListener("click", ()=>{
         const viewportWidth = window.innerWidth;
@@ -14,6 +15,7 @@ const author = document.querySelector(".author-box");
             console.log(`Clicked on large screen`);
         }
       })
+year.textContent = new Date().getFullYear();
 
 
 
